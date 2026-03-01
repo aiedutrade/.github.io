@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网+国际贸易实训 - 人工智能微课程</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        /* 全局样式 */
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 容器样式 - 适配不同屏幕 */
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #2a6099;
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-content p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* 主内容区 */
+        main {
+            padding: 2rem 0;
+        }
+
+        /* 视频网格布局 - 响应式设计 */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* 视频卡片样式 */
+        .video-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+
+                /* 视频播放器区域 */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            background-color: #000;
+        }
+
+        /* 视频播放器样式 */
+        .video-player {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            outline: none;
+        }
+
+        /* 视频信息区域 */
+        .video-info {
+            padding: 1rem 1.2rem;
+        }
+
+        .video-title {
+            font-size: 1rem;
+            color: #2a6099;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .video-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #2a6099;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式适配 - 手机端 */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .video-wrapper {
+                height: 160px;
+            }
+
+            .video-grid {
+                gap: 1rem;
+            }
+        }
+
+        /* 响应式适配 - 小屏手机 */
+        @media (max-width: 480px) {
+            .header-content h1 {
+                font-size: 1.3rem;
+            }
+
+            .video-wrapper {
+                height: 140px;
+            }
+
+            .video-title {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <div class="container header-content">
+            <h1>互联网+国际贸易实训</h1>
+            <p>人工智能微课程学习平台</p>
+        </div>
+    </header>
+    <main class="container">
+        <div class="video-grid">
+            <!-- 视频1 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video1.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">1.外贸业务AI工具推荐 </h3>
+                    <p class="video-desc">了解外贸业务常用辅助AI工具及其特点</p>
+                </div>
+            </div>
+
+            <!-- 视频2 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">2. 贸易准备与 AI 市场调研工具应用</h3>
+                    <p class="video-desc">掌握外贸市场调研核心方法，学会运用AI工具完成市场分析与客户定位</p>
+                </div>
+            </div>
+
+            <!-- 视频3 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">3. AI 智能核算与外贸价格条款制定</h3>
+                    <p class="video-desc">运用AI核算工具完成成本测算，掌握外贸价格条款的智能制定方法</p>
+                </div>
+            </div>
+
+            <!-- 视频4 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">4. AI 工具辅助外贸合同核心条款草拟</h3>
+                    <p class="video-desc">借助AI工具快速草拟外贸合同核心条款，提升合同制定效率与准确性</p>
+                </div>
+            </div>
+
+            <!-- 视频5 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">5. 信用证智能审核工具应用</h3>
+                    <p class="video-desc">使用AI审核工具校验信用证条款，识别风险点并提出修改建议</p>
+                </div>
+            </div>
+
+            <!-- 视频6 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">6. 外贸运输单证的 AI 智能制作与校验</h3>
+                    <p class="video-desc">利用AI工具制作运输单证，完成提单等核心单证的智能校验</p>
+                </div>
+            </div>
+
+            <!-- 视频7 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">7. 外贸保险与结算单证的 AI 实操</h3>
+                    <p class="video-desc">完成保险、结算单证的AI制作，实现多单证协同校验与结汇操作</p>
+                </div>
+            </div>
+
+            <!-- 视频8 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video class="video-player" controls preload="metadata">
+                        <source src="video5.mp4" type="video/mp4">
+                        你的浏览器不支持HTML5视频播放，请更换现代浏览器！
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">8. AI 工具与 POCIB 软件的协同模拟操作</h3>
+                    <p class="video-desc">实现AI工具与POCIB软件的联动，完成外贸全流程智能模拟操作</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+        <div class="container">
+            <p>© 2026 高职院校国际商务专业 - 互联网+国际贸易实训人工智能微课程</p>
+        </div>
+    </footer>
+
+    <!-- 简化的交互脚本：仅处理多视频播放冲突 -->
+    <script>
+        // 获取所有视频播放器
+        const videoPlayers = document.querySelectorAll('.video-player');
+
+        // 页面关闭/刷新时暂停所有视频
+        window.addEventListener('beforeunload', () => {
+            videoPlayers.forEach(player => player.pause());
+        });
+    </script>
+</body>
+</html>
