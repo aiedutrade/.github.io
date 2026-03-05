@@ -77,14 +77,13 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
         }
 
-                /* 视频播放器区域 */
+        /* 视频播放器区域 */
         .video-wrapper {
             position: relative;
             width: 100%;
             height: 180px;
             background-color: #000;
         }
-
         /* 视频播放器样式 */
         .video-player {
             width: 100%;
@@ -92,12 +91,10 @@
             object-fit: cover;
             outline: none;
         }
-
         /* 视频信息区域 */
         .video-info {
             padding: 1rem 1.2rem;
         }
-
         .video-title {
             font-size: 1rem;
             color: #2a6099;
@@ -105,12 +102,10 @@
             font-weight: 600;
             line-height: 1.4;
         }
-
         .video-desc {
             font-size: 0.85rem;
             color: #666;
         }
-
         /* 页脚样式 */
         footer {
             background-color: #2a6099;
@@ -120,32 +115,28 @@
             margin-top: 2rem;
             font-size: 0.9rem;
         }
-
         /* 响应式适配 - 手机端 */
-        @media (max-width: 768px) {
-            .header-content h1 {
+        @media (max-width: 767px) {
+             .column {
+        width: 100%; /* 占满宽度 */
+            }
+         }.header-content h1 {
                 font-size: 1.5rem;
             }
-
             .video-wrapper {
                 height: 160px;
             }
-
             .video-grid {
                 gap: 1rem;
             }
-        }
-
         /* 响应式适配 - 小屏手机 */
         @media (max-width: 480px) {
             .header-content h1 {
                 font-size: 1.3rem;
             }
-
             .video-wrapper {
                 height: 140px;
             }
-
             .video-title {
                 font-size: 0.9rem;
             }
@@ -175,7 +166,6 @@
                     <p class="video-desc">了解外贸业务常用辅助AI工具及其特点</p>
                 </div>
             </div>
-
             <!-- 视频2 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -189,7 +179,6 @@
                     <p class="video-desc">掌握外贸市场调研核心方法，学会运用AI工具完成市场分析与客户定位</p>
                 </div>
             </div>
-
             <!-- 视频3 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -203,7 +192,6 @@
                     <p class="video-desc">运用AI核算工具完成成本测算，掌握外贸价格条款的智能制定与审核方法</p>
                 </div>
             </div>
-
             <!-- 视频4 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -217,7 +205,6 @@
                     <p class="video-desc">借助AI工具快速草拟外贸合同核心条款，提升合同制定效率与准确性</p>
                 </div>
             </div>
-
             <!-- 视频5 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -231,7 +218,6 @@
                     <p class="video-desc">使用AI审核工具校验信用证条款，识别风险点并提出修改建议</p>
                 </div>
             </div>
-
             <!-- 视频6 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -245,7 +231,6 @@
                     <p class="video-desc">利用AI工具制作运输单据，完成海运提单等核心单证的智能校验</p>
                 </div>
             </div>
-
             <!-- 视频7 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -259,7 +244,6 @@
                     <p class="video-desc">完成保险、结算单据的AI制作，实现多单据协同校验与结汇操作</p>
                 </div>
             </div>
-
             <!-- 视频8 -->
             <div class="video-card">
                 <div class="video-wrapper">
@@ -285,7 +269,6 @@
     <script>
         // 获取所有视频播放器
         const videoPlayers = document.querySelectorAll('.video-player');
-
         // 页面关闭/刷新时暂停所有视频
         window.addEventListener('beforeunload', () => {
             videoPlayers.forEach(player => player.pause());
