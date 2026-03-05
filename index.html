@@ -160,7 +160,8 @@
             <div class="video-card">
                 <div class="video-wrapper">
                     <video class="video-player" controls preload="metadata">
-                       playsinline  <!-- 关键：解决iOS/微信浏览器不能内联播放的问题 -->
+                         width="100%"  <!-- 响应式宽度 -->
+                         playsinline  <!-- 关键：解决iOS/微信浏览器不能内联播放的问题 -->
                          webkit-playsinline="true"  <!-- 兼容iOS Safari -->
                          x5-playsinline="true"  <!-- 兼容微信X5内核 -->
                         <source src="video2.mp4" type="video/mp4">
